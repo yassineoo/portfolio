@@ -1,0 +1,14 @@
+.body{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content :center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width : 720px) {
+    .body{
+        width: 100%;
+    }
+}

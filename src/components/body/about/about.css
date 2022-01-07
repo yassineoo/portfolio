@@ -1,0 +1,42 @@
+.about  {
+    padding-left : 16px;
+    padding-bottom : 40px;
+    align-Items : center;
+    
+}
+.aboutTop  {
+    display : flex;
+    flex-direction : row ;
+    justify-content : space-between;
+    align-items : center;
+}
+.imgg {
+    
+    height : 280px
+}
+.text {
+    font-size: 24px;
+}
+.name {
+        font-size: 32px;
+    color : rgb(10, 226, 82);
+}
+@media only screen  and (max-width:800px) {
+ 
+    
+    .aboutTop {
+        flex-direction : column ;
+        justify-content :center ;
+        align-items : center ;
+    }
+   .imgg{
+       height : 160px;
+   }
+   .text {
+       font-size : 20px;
+   }
+   .name  {
+       font-size : 26px;
+   }
+}
+    

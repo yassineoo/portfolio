@@ -1,0 +1,61 @@
+.skills {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 16px;
+}
+.skillsSection {
+    display: flex;
+   
+    justify-content :space-between;
+    margin :8px 0;
+}
+.type {
+    font-size: 24px;
+    font-weight :600;
+}
+.skillsList {
+ display:flex;
+
+ flex-wrap: wrap;
+ max-width: 100%;
+ justify-content: flex-end;
+ align-items: flex-end;
+}
+
+
+.skillCard {
+    width : max-content ;
+    padding : 8px 8px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+
+}
+
+.skillIcon {
+    font-size: 80px;
+}
+.skillName {
+    font-size: 16px;
+}
+@media only screen and (max-width : 720px) {
+    .skillCard{
+        height: 75px;
+    }
+    .skillIcon{
+        font-size :60px;
+    }
+    .skillName{
+        font-size: 16px;
+    }
+    .skillsSection{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

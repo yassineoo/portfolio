@@ -1,0 +1,80 @@
+.prCard{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.prImg{
+    display: flex;
+    width:100%;
+    max-width: max-content;
+    height:auto;
+}
+.prLinks { 
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.prLinkImg{
+    width :24px;
+    height : 16px;
+    display : flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+.prlink  {
+   text-decoration: none;
+   color : black;
+}
+p{
+    font: size 14px;
+    margin-right: 22px;
+    word-wrap: break-word;
+}
+
+.prinfo {
+    margin-right: 10px ;
+}
+.prTitel {
+    font-size : 20px;
+    font-weight : 600px ; 
+
+
+}
+.prTags {
+    display: flex;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+.prTag {
+    margin: 4px;
+    padding: 4px 8px;
+    background-color: aquamarine;
+    border-radius: 4px;
+}
+.linkButton {
+    display: flex;
+    justify-content :center;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 4px 8px;
+    margin: 4px;
+   border-radius: 4px;
+   font-size: 16px;
+  font-weight: bold;
+}
+@media only screen and (max-width : 720px){
+    .prImg{
+        width: 70%;
+    }
+    .prCard{
+        flex-direction: column-reverse;
+    }
+    .prinfo{
+        margin-right: 0;
+        margin-top: 10 px;
+    }
+}

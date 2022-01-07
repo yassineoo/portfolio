@@ -1,0 +1,16 @@
+.icon {
+    height: 60px;
+}
+.list {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+.list a {
+  margin: 15px;
+}
+@media only screen and  (max-width:800px) {
+    .icon {
+        height :32px;
+    }
+}
