@@ -1,6 +1,8 @@
 .sperater {
     background-image: linear-gradient(to right top, #4a86f4, #568df2, #6293f0, #6d9aee, #78a0eb, #71abf1, #6bb5f5, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    margin: 16px 0px;
+    margin: 16px ;
+    display:flex;
+    margin-left: 0;
     height: 10px;
     width : 40%;
     border-radius: 3px;
