@@ -28,7 +28,7 @@ const ResponsiveAppBar = () => {
 
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -77,7 +77,7 @@ const ResponsiveAppBar = () => {
                     smooth={true}
                     offset={70}
                     duration= {500}
-                    padding={-50}
+                    offset={-70}
                     to={page}>{page}
                      
                     </Link>
@@ -107,7 +107,7 @@ const ResponsiveAppBar = () => {
                     smooth={true}
                     offset={70}
                     duration= {500}
-                    padding={-50}
+                    offset={-70}
                     to={page}>{page}
 
                     </Link>
