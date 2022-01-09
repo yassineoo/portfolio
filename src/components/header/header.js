@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import { Link, animateScroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 import Button from '@mui/material/Button';
 
@@ -75,7 +75,7 @@ const ResponsiveAppBar = () => {
 
                     spy={true}
                     smooth={true}
-                    offset={70}
+                   
                     duration= {500}
                     offset={-70}
                     to={page}>{page}
@@ -85,7 +85,14 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <img src= '../../assets/logo.png'  width={50}></img>
+          <Typography
+            variant="h5"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, color :'black'}}
+          >
+            YAS DEV
+          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , justifyContent:{xs:'flex-end'}}}>
             {pages.map((page) => (
               <Button
@@ -98,7 +105,7 @@ const ResponsiveAppBar = () => {
 
                     spy={true}
                     smooth={true}
-                    offset={70}
+                    
                     duration= {500}
                     offset={-70}
                     to={page}>{page}
