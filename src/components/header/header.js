@@ -28,14 +28,14 @@ const ResponsiveAppBar = () => {
 
 
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" sx={{backgroundColor:'#7fffd4'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h4"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' },color : 'black' , fontWeight:'bold'}}
           >
             YAS DEV
           </Typography>
@@ -70,7 +70,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} sx={{color : 'black'}}>
                   <Link    activeClass="active"
 
                     spy={true}
@@ -85,21 +85,14 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, }}
-          >
-            YAS DEV
-          </Typography>
+          <img src= '../../assets/logo.png'  width={50}></img>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , justifyContent:{xs:'flex-end'}}}>
             {pages.map((page) => (
               <Button
                 key={page}
                  
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, mx:3, color: 'white', display: 'block',fontSize : '18px' ,  }}
+                sx={{ my: 2, mx:3, color: 'black', display: 'block',fontSize : '18px' , fontWeight:'bold' }}
               >
                     <Link    activeClass="active"
 

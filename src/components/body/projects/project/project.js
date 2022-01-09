@@ -9,14 +9,14 @@ export default function Project({project}) {
          <label className='prTitel'>{project.title}</label>
            <div className='prLinks'>
           {project.demo && 
-          <a href={project.demo} className='prlink'>
+          <a href={project.demo} className='prlink' target='_blank'>
            <div className='linkButton'>
       
            <img src={require('../../../../assets/icons/demo.png')} className='prLinkImg'></img>
                demo
            </div>
           </a>}
-          <a href={project.github} className='prlink'>
+          <a href={project.github} className='prlink' target='_blank'>
            <div className='linkButton'> 
            <i class="devicon-github-original colored"></i>GitHub
            </div>

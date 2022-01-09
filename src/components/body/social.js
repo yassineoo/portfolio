@@ -8,7 +8,7 @@ const  SocialList = () => {
         <div  className='list'> 
          {Social.map((item) => (
                
-                 <a href = {item.link} key={item.platform}>
+                 <a href = {item.link} key={item.platform}  target='_blank'>
 
                      <div >
                             <img className='icon' src={item.icon}></img>

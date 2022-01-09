@@ -1,11 +1,13 @@
+
 .body section{
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-content :center;
+    z-index: 555;
     align-items: center;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 @media screen and (max-width : 720px) {
     .body section{
