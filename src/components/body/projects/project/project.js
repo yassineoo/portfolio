@@ -8,7 +8,7 @@ export default function Project({project}) {
 
   whileInView={{ opacity: 1 }}
   viewport={{ once: true }}
-  whileHover={{ scale: 1.2 }}
+  whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.9 }}
   className='prCard'
  > 
