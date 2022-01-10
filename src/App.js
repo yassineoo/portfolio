@@ -12,7 +12,7 @@ return (
 
 
         <Navbar />
-        <Body/>
+        <Body />
 <Footer /> 
      
     

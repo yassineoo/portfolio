@@ -1,80 +1,91 @@
-.prCard{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.prImg{
-    display: flex;
-    width:100%;
-    max-width: max-content;
-    height:auto;
-}
-.prLinks { 
-    display: flex;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: flex-start;
-}
-.prLinkImg{
-    width :24px;
-    height : 16px;
-    display : flex; 
-    justify-content: center;
-    align-items: center;
+.prCard {
+     border-radius: 4;
+     border: 1px dashed aquamarine;
+     box-shadow: 10px aquamarine;
+    padding-bottom: 10px;
+     flex: 1 0 50%;
+     flex-direction: column;
+     display: flex;
 
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
 }
-.prlink  {
-   text-decoration: none;
-   color : black;
+.pgCard :hover {
+    background-color: rgb(22, 224, 214);
 }
-p{
-    font: size 14px;
-    margin-right: 22px;
-    word-wrap: break-word;
+.imgCon {
+     flex: 1;
+     max-height: 100%;
+}
+.prImg {
+     width: 98%;
+     flex: 1 0 50%;
+     margin-right: 5px;
+}
+.prLinks {
+     display: flex;
+     margin-top: 10px;
+     align-items: center;
+     justify-content: flex-start;
+}
+.prLinkImg {
+     width: 24px;
+     height: 16px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.prlink {
+     text-decoration: none;
+     color: black;
+}
+p {
+     font: size 14px;
+     margin-right: 22px;
+     word-wrap: break-word;
 }
 
-.prinfo {
-    margin-right: 10px ;
+.prInfo {
+     margin-right: 10px;
+
+     flex: 1 0 50%;
 }
 .prTitel {
-    font-size : 20px;
-    font-weight : 600px ; 
-
-
+     font-size: 20px;
+     font-weight: 600px;
 }
 .prTags {
-    display: flex;
-    max-width: 60%;
-    flex-wrap: wrap;
+     display: flex;
+     max-width: 60%;
+     flex-wrap: wrap;
 }
 .prTag {
-    margin: 4px;
-    padding: 4px 8px;
-    background-color: aquamarine;
-    border-radius: 4px;
+     margin: 4px;
+     padding: 4px 8px;
+     background-color: aquamarine;
+     border-radius: 4px;
 }
 .linkButton {
-    display: flex;
-    justify-content :center;
-    align-items: center;
-    background-color: #7fffd4;
-    padding: 4px 8px;
-    margin: 4px;
-   border-radius: 4px;
-   font-size: 16px;
-  font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #7fffd4;
+     padding: 4px 8px;
+     margin: 4px;
+     border-radius: 4px;
+     font-size: 16px;
+     font-weight: bold;
 }
-@media only screen and (max-width : 720px){
-    .prImg{
-        width: 70%;
-    }
-    .prCard{
-        flex-direction: column-reverse;
-    }
-    .prinfo{
-        margin-right: 0;
-        margin-top: 10 px;
-    }
+@media only screen and (max-width: 720px) {
+     .prImg {
+          width: 70%;
+     }
+     .prCard {
+          flex-direction: column-reverse;
+     }
+     .prinfo {
+          margin-right: 0;
+          margin-top: 10 px;
+     }
 }

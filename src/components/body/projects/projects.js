@@ -9,9 +9,11 @@ const  Projects = () => {
      
          <Sperater/>
             <label className='sectionTitle'>Projects</label>
+            <div className='hi'>
             {projects.map((project) => (
                 <Project  project={project} />
             ))}
+            </div>
         </div>
     )
 }

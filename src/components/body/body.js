@@ -6,10 +6,10 @@ import Skills from './skills/skills.js';
 
 
 import './bory.css';
-function Body() {
+function Body({dark}) {
 
     return (
-        <div className='body'>
+        <div className={dark==1?'bodydark':'body'}>
              <section id='About'>
                    <About/>
              </section>

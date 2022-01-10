@@ -2,6 +2,7 @@
     padding-left : 16px;
     padding-bottom : 40px;
     align-Items : center;
+    padding-top :30px;
     
 }
 .aboutTop  {
@@ -15,11 +16,12 @@
     height : 280px
 }
 .text {
+    color: black;
     font-size: 24px;
 }
 .name {
         font-size: 32px;
-    color : rgb(10, 226, 82);
+    color : rgb(39, 17, 238);
 }
 @media only screen  and (max-width:800px) {
  
@@ -33,6 +35,7 @@
        height : 160px;
    }
    .text {
+       
        font-size : 20px;
    }
    .name  {

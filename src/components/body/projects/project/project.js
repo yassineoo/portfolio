@@ -1,9 +1,18 @@
 import React from 'react'
 import './project.css';
-
+import { motion } from 'framer-motion';
 export default function Project({project}) {
     return (
-        <div className='prCard'>
+      <motion.div
+  initial={{ opacity: 0 }}
+
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+  className='prCard'
+ > 
+     
      
         <div className='prInfo'>
          <label className='prTitel'>{project.title}</label>
@@ -34,6 +43,6 @@ export default function Project({project}) {
         <div className = 'imgCon'>
             <img className='prImg' src= {project.img }/>
         </div>
-        </div>
+        </motion.div>
     )
 }
